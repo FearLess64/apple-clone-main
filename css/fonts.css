@@ -1,0 +1,35 @@
+/* Regular */
+@font-face {
+    font-family: 'San Francisco';
+    src: url('path-to-font/SF-Regular.woff2') format('woff2'),
+         url('path-to-font/SF-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Medium */
+@font-face {
+    font-family: 'San Francisco';
+    src: url('path-to-font/SF-Medium.woff2') format('woff2'),
+         url('path-to-font/SF-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+
+/* Bold */
+@font-face {
+    font-family: 'San Francisco';
+    src: url('path-to-font/SF-Bold.woff2') format('woff2'),
+         url('path-to-font/SF-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+/* Italic */
+@font-face {
+    font-family: 'San Francisco';
+    src: url('path-to-font/SF-RegularItalic.woff2') format('woff2'),
+         url('path-to-font/SF-RegularItalic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+}
