@@ -1,0 +1,267 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner:wght@400;500&family=Montserrat:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: rgb(236, 236, 236);
+    background: none;
+    font-family: 'SF Pro Display', sans-serif;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+header {
+    background-color: #ffffffcc;
+    display: flex;
+    width: 100%;
+    height: 44px;
+    align-items: center;
+    justify-content: center;
+    z-index: 100;
+    opacity: 1;
+    transition: background-color 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+#navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar-logo {
+    margin-right: 8px;
+    flex: 1;
+}
+
+.navbar-logo img {
+    width: 16px;
+    height: 16px;
+}
+
+.navbar-logo img:hover {
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+.navbar-logo img:active {
+    transform: scale(0.9);
+}
+
+#navbar {
+    display: flex;
+    margin: 0px 62.4px;
+    padding: 0px 22px;
+    gap: 8px;
+}
+
+.nav-menu {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    align-items: center;
+}
+
+.nav-menu li, a{
+    text-decoration: none;
+    list-style: none;
+    padding: 0px 8px;
+    font-size: 12px;
+    color: rgba(0, 0, 0, .8);
+    font-weight: 500;
+    background: none;
+}
+
+.nav-menu li, a:hover {
+    color: black;
+}
+
+.nav-tools {
+    display: flex;
+    gap: 24px;
+    align-items: center;
+    margin-left: 8px;
+}
+
+.nav-tools i:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.nav-tools i:active {
+    transform: scale(0.9);
+}
+
+
+
+
+.user-card-container {
+    background-color: rgb(255, 255, 255);
+    width: 20%;
+    height: 60vh;
+    margin: 2rem;
+    position: relative;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    cursor: pointer;
+    margin-top: 40px;
+    box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.user-card-container:hover {
+    transform: scale(1.1);
+    box-shadow: 5px 5px 10px 5px rgba(0, 0, 0, 0.2);
+}
+
+
+.div-modal-display {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(101, 101, 101, 0.8);
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    font-size: 2rem;
+    color: rgb(23, 11, 11);
+    position: fixed;
+    z-index: 100;
+}
+
+.modal-container {
+    background-color: rgb(255, 255, 255);
+    height: 70vh;
+    width: 55vw;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.modal-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: none;
+    gap: 30px;
+    align-items: center;
+    margin-top: 20%;
+}
+
+.divCard-cover {
+    width: 100%;
+    height: 110px;
+    background-color: rgba(33, 144, 167, 0.8);
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+}
+
+.img-container {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: rgb(235, 235, 235);
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-container img {
+    width: 85px;
+    height: 85px;
+    border-radius: 50%; 
+}
+
+.content-div {
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    
+}
+
+.content-div h1, p {
+    background: none;
+    margin: 0 auto;
+}
+
+.content-div h1 {
+    font-weight: 400;
+    font-size: 25px;
+}
+
+.content-div p {
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    width: 200px;
+}
+
+.contact-div {
+    background: none;
+    background-color: white;
+    padding: 10px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.contact-div p {
+    font-family: "Montserrat", sans-serif;
+    font-size: 11px;
+}
+
+.contact-div p:hover {
+    background-color: #efefef;
+}
+
+.close-btn {
+    background: none;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
+}
+.close-btn span {
+    background: none;
+    font-size: 18px;
+    font-family: "Montserrat", sans-serif;
+    transition: transform 0.3s;
+}
+
+.close-btn span:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.close-btn i {
+    background: none;
+}
+
+#check {
+    width: 90px;
+    height: 90px;
+    background: none;
+}
+
+.customers {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+}
+
